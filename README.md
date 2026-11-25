@@ -14,9 +14,23 @@
   <a href="#"><img src="https://img.shields.io/badge/Ejercicios-JDBC-orange?style=flat" alt="Ejercicios JDBC"></a>
   &nbsp;
   <img src="https://img.shields.io/badge/Estado-En_Proceso-yellow?style=flat" alt="En Proceso">
+  &nbsp;
+  <a href="https://drive.google.com/file/d/1K9oWwrnw2xDFYfVv1IQmC_AjXq2cjsi9/view"><img src="https://img.shields.io/badge/Teor%C3%ADa_y_Diapositivas-4285F4?style=flat&logo=googledrive&logoColor=white" alt="Diapositivas de clase"></a>
 </div>
 
 <br>
+
+---
+
+<h3>Material Teórico y Diapositivas de Clase</h3>
+
+<p>Acceso directo a las presentaciones oficiales de la asignatura (se actualizan progresivamente durante el curso):</p>
+
+| Tema / Contenido | Recurso | Enlace |
+| :--- | :--- | :--- |
+| **Unidad JDBC y Acceso a Bases de Datos** | Diapositivas (Google Drive) | [Ver presentación](https://drive.google.com/file/d/1K9oWwrnw2xDFYfVv1IQmC_AjXq2cjsi9/view) |
+
+---
 
 ## Configuración del entorno (MySQL en Docker + Base de datos World)
 
