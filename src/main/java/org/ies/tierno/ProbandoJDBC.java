@@ -11,7 +11,7 @@ public class ProbandoJDBC {
             // Establecemos la conexion con la BD
             String bdatos="jdbc:mysql://localhost:3306/world";
             String usuario="root";
-            String contrasena="";
+            String contrasena="Sandia4you";
 
             Connection conexion = DriverManager.getConnection(bdatos, usuario, contrasena);
 
