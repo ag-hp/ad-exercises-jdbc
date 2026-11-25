@@ -48,3 +48,7 @@ docker exec -it diurno-mysql mysql -u root -p
    ```sql
    SELECT ID, Name, CountryCode FROM city LIMIT 5;
    ```
+   
+---
+
+<img width="1741" height="1565" alt="terminal-commads" src="https://github.com/user-attachments/assets/33c11ab9-13be-41b1-9a97-e66f99ab872b" />
