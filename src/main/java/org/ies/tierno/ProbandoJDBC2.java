@@ -25,21 +25,26 @@ public class ProbandoJDBC2 {
             }
             resul.close();
 
-            // 2. Mostrar solo el nombre
+            System.out.println("*****");
+
+            // 2. Mostrar solo el nombre en la misma línea
             sql = "SELECT Name FROM city LIMIT 5";
             resul = sentencia.executeQuery(sql);
 
             while (resul.next()) {
-                System.out.printf("%s %n", resul.getString(1));
+                System.out.printf("%s, ", resul.getString(1));
             }
+            System.out.println(); // Salto de línea al terminar la fila
             resul.close();
 
-            // 3. Mostrar solo nombre
-            sql = "SELECT ID, Name FROM city LIMIT 5";
+            System.out.println("*****");
+
+            // 3. Mostrar nombre y código de país
+            sql = "SELECT Name, CountryCode FROM city LIMIT 5";
             resul = sentencia.executeQuery(sql);
 
             while (resul.next()) {
-                System.out.printf("%s %n", resul.getString(2));
+                System.out.printf("%s, %s %n", resul.getString(1), resul.getString(2));
             }
             resul.close();
 
