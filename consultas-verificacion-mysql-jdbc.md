@@ -48,6 +48,8 @@ docker exec -it diurno-mysql mysql -u root -p
    ```sql
    SELECT ID, Name, CountryCode FROM city LIMIT 5;
    ```
+
+mysql> describe city;
    
 ---
 
