@@ -53,4 +53,28 @@ mysql> describe city;
    
 ---
 
-<img width="1744" height="1560" alt="terminal-commads" src="https://github.com/user-attachments/assets/816f8a3e-4227-49fa-bc66-643c53176080" />
+### Consulta 1: `SELECT * FROM city LIMIT 5;`
+
+| ID | Name | CountryCode | District | Population |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | Kabul | AFG | Kabol | 1780000 |
+| 2 | Qandahar | AFG | Qandahar | 237500 |
+| 3 | Herat | AFG | Herat | 186800 |
+| 4 | Mazar-e-Sharif | AFG | Balkh | 127800 |
+| 5 | Amsterdam | NLD | Noord-Holland | 731200 |
+
+*5 rows in set (0.00 sec)*
+
+---
+
+### Consulta 2: `SELECT ID, Name, CountryCode FROM city LIMIT 5;`
+
+| ID | Name | CountryCode |
+| :--- | :--- | :--- |
+| 1 | Kabul | AFG |
+| 2 | Qandahar | AFG |
+| 3 | Herat | AFG |
+| 4 | Mazar-e-Sharif | AFG |
+| 5 | Amsterdam | NLD |
+
+*5 rows in set (0.00 sec)*
