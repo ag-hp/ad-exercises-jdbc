@@ -69,3 +69,12 @@ Para eliminar los archivos descargados tanto en el equipo local como dentro del 
 rm -rf world-db world-db.tar.gz
 docker exec diurno-mysql rm /tmp/world.sql
 ```
+
+---
+
+## Acceso rápido a la consola interactiva de MySQL (`mysql>`)
+
+Para entrar directamente al cliente de línea de comandos de MySQL dentro del contenedor `diurno-mysql` (desde la terminal del sistema o desde la terminal integrada de IntelliJ con `Alt + F12`):
+
+```bash
+docker exec -it diurno-mysql mysql -u root -p
