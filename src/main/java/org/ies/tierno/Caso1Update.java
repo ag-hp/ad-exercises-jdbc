@@ -11,15 +11,22 @@ public class Caso1Update {
             String password = "Sandia4you";
             Connection connection = DriverManager.getConnection(bdatos, user, password);
 
-            // 1. Statement: Se introducen a la base de datos directamente
+            // Paso previo: Insertamos 'Inventada' para que exista en la tabla
+            Statement insertStmt = connection.createStatement();
+            String sqlInsert = "INSERT INTO city (Name, CountryCode, District, Population) "
+                    + "VALUES ('Inventada', 'ABW', 'Lum', 5)";
+            insertStmt.executeUpdate(sqlInsert);
+            insertStmt.close();
+
+            // 1. Statement: UPDATE directo
             Statement sentencia1 = connection.createStatement();
             String sql1 = "UPDATE city SET District = 'AAA', Population = 25 WHERE Name = 'Inventada'";
             sentencia1.executeUpdate(sql1);
             sentencia1.close();
 
-            // 2. PreparedStatement: Pones los datos con interrogación y luego añades cada uno de ellos con una sentencia
+            // 2. PreparedStatement: UPDATE con parámetros (?)
             String sql2 = "UPDATE city SET District = ?, Population = ? WHERE Name = ?";
-            PreparedStatement sentencia2  = connection.prepareStatement(sql2);
+            PreparedStatement sentencia2 = connection.prepareStatement(sql2);
             sentencia2.setString(1, "AAA");
             sentencia2.setInt(2, 25);
             sentencia2.setString(3, "Inventada");
@@ -29,7 +36,7 @@ public class Caso1Update {
             connection.close();
         } catch (ClassNotFoundException cn) {
             cn.printStackTrace();
-        } catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
         }
     }
